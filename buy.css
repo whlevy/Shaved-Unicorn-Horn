@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* area around outside of site */
+    margin: 0;
+    padding: 0;
+    /* text size */
+    font-size: 1em;
+    /* where the text shows up on screen (center)*/
+    text-align: center;
+    /* side bar outline color white */
+    color: rgb(0, 0, 0);
+}
+
+.holy-grail header,
+.holy-grail footer,
+.holy-grail-content {
+    padding: 20px;
+}
+
+.holy-grail header,
+.holy-grail footer {
+    /* header and footer color yellowish */
+    background: #ffccff;
+}
+
+
+
+.holy-grail-content {
+    color: rgb(0, 0, 0);
+    background-color: #ffffcc;
+}
+
+/**
+     * Flex things:
+     * — Mobile first
+     * — Responsive
+     */
+.holy-grail {
+    min-height: 100vh;
+}
+
+.holy-grail,
+.holy-grail-body {
+    display: flex; /* makes the flexboxes work*/
+    flex: 1 1 auto;
+    flex-direction: column; /* makes the items arrange themselves in columns*/
+}
+
+.holy-grail-content {
+    flex: 1 1 auto;
+}
+
+@media (min-width: 768px) { /* starts out with px size for a phone*/
+
+    .holy-grail-body {
+        flex-direction: row; /* arranges items in rows*/
+    }
+    
+    /* text font */
+h1{ 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-size: 30px;
+}
+
+h5{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+li{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #ffccff;
+      margin: -1%;
+      text-align: center;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 100pt;
+      word-spacing: 150px;
+      
+  }
+
+  .navbar li {
+      display: inline;
+  }
+
+  .navbar li a:hover{
+      background-color: pink;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ffffcc;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #ccffff;
+    color: black;
+  }
+  
+  h6 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+  }
